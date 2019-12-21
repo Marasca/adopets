@@ -1,0 +1,146 @@
+body {
+  background-color: #fbfeff;
+}
+
+#root {
+  height: 100%;
+}
+
+.ant-btn-primary {
+  background-color: #ce3f71;
+  border-color: #ce3f71;
+  margin-top: 15px;
+
+  &:hover {
+    background-color: #db678c;
+    border-color: #db678c;
+  }
+}
+
+.page-layout-Error404 {
+  height: 100%;
+
+  .page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      max-width: 290px;
+      text-align: center;
+
+      img {
+        margin-bottom: 15px;
+      }
+
+      h1 {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+.page-layout-Login {
+  height: 100%;
+
+  .page-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content {
+      max-width: 290px;
+    }
+  }
+
+  .login-form {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    padding: 45px;
+
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+}
+
+.page-layout-Home {
+  background-color: #fff;
+
+  .page-header {
+    background-color: #fff;
+    border-bottom: 1px solid #c8c8d2;
+    box-shadow: 0 4px 24px rgba(200, 200, 210, .5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .avatar {
+      display: flex;
+      align-items: center;
+      color: #50505a;
+      line-height: 1.1;
+      text-align: right;
+
+      a {
+        font-size: 12px;
+      }
+
+      div {
+        margin-left: 10px
+      }
+
+      img {
+        width: 32px;
+      }
+    }
+  }
+
+  .page-content {
+    .content {
+      padding: 50px;
+
+      .ant-table-content {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.page-loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: rgba(206, 63, 113, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+  visibility: hidden;
+  opacity: 0;
+
+  .loader {
+    width: 80px;
+  }
+}
+
+body.show-page-loader {
+  .page-loader {
+    visibility: visible;
+    opacity: 1;
+    z-index: 9999;
+  }
+}
